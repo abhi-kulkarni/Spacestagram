@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Spacestagram-Shopify-Frontend-Challenge/static/css/main.38828330.css",
+    "main.js": "/Spacestagram-Shopify-Frontend-Challenge/static/js/main.c7c6456d.js",
+    "static/js/787.fa78698e.chunk.js": "/Spacestagram-Shopify-Frontend-Challenge/static/js/787.fa78698e.chunk.js",
+    "static/media/logo.png": "/Spacestagram-Shopify-Frontend-Challenge/static/media/logo.1c139c6ac4fcecc1fc7c.png",
+    "index.html": "/Spacestagram-Shopify-Frontend-Challenge/index.html",
+    "main.38828330.css.map": "/Spacestagram-Shopify-Frontend-Challenge/static/css/main.38828330.css.map",
+    "main.c7c6456d.js.map": "/Spacestagram-Shopify-Frontend-Challenge/static/js/main.c7c6456d.js.map",
+    "787.fa78698e.chunk.js.map": "/Spacestagram-Shopify-Frontend-Challenge/static/js/787.fa78698e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38828330.css",
+    "static/js/main.c7c6456d.js"
+  ]
+}
