@@ -10,7 +10,7 @@ import ImageModal from "../components/ImageModal";
 import DateFilter from "../components/DateFilter";
 import moment from 'moment'
 import { useDispatch, useSelector } from 'react-redux'
-import {sessionImages, sessionDateFilter} from '../redux'
+import {sessionImages, sessionImageGallery} from '../redux'
 
 function IndexPage(props) {
 
@@ -69,8 +69,20 @@ function IndexPage(props) {
             }
             return item;
         });
-       
+
+        let tempDict = {};
+        let likedImages = images.filter(item => {
+            return item.liked;
+        })
+        let savedImages = images.filter(item => {
+            return item.saved;
+        })
+        tempDict['liked'] = likedImages;
+        tempDict['saved'] = savedImages;
+        
+        dispatch(sessionImageGallery(tempDict));
         setImageGallery(images);
+        
     }
     
     const getAllImagesData = (startDate, endDate, init) => {
