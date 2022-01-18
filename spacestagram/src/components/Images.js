@@ -64,6 +64,7 @@ function Images(props) {
       }
     
     const handleCurrentItemsMethod = (currentItems) => {
+        setCurrentImages([]);
         setCurrentImages(currentItems);
     }
 
