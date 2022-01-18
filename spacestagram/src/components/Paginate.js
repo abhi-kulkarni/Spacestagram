@@ -11,11 +11,13 @@ function Paginate(props) {
     
     useEffect(() => {
         paginationMethod();
-    }, [itemOffset, itemsPerPage]);
+    }, []);
     
-    const paginationMethod = () => {
-        const endOffset = itemOffset + itemsPerPage;
-        let currentItems = imageGallery.slice(itemOffset, endOffset);
+    const paginationMethod = (newOffset) => {
+
+        let itemOffsetObj = newOffset?newOffset:itemOffset;
+        const endOffset = itemOffsetObj + itemsPerPage;
+        let currentItems = imageGallery.slice(itemOffsetObj, endOffset);
         setPageCount(Math.ceil(imageGallery.length / itemsPerPage));
         props.handleCurrentItems(currentItems)
     }
@@ -24,6 +26,7 @@ function Paginate(props) {
 
         let newOffset = (event.selected * itemsPerPage) % imageGallery.length;
         setItemOffset(newOffset);
+        paginationMethod(newOffset);
     };
 
     return (
