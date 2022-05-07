@@ -1,1 +1,1 @@
-# Spacestagram-Shopify-Frontend-Challenge
+# Spacestagram
